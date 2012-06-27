@@ -8,11 +8,23 @@
   </head>
   <body ng-app>
 
-    <div class="thumbs" ng-controller="ThumbsCtrl">
-      <div class="thumb" ng-repeat="work in works">
-        <img ng-src="/thumbs/{{work.thumb}}" />
-        <div class="title">{{work.title}}</div>
+    <div ng-controller="AppCtrl">
+
+      <div class="thumbs">
+        <div class="thumb" ng-repeat="work in works" ng-click="showWork(work)">
+          <img ng-src="/thumbs/{{work.thumb}}" />
+          <div class="title">{{work.title}}</div>
+        </div>
       </div>
+
+      <div class="detail" ng-show="detail">
+        <img ng-src="/detail/{{detailImg}}" />
+        <h1>Work: {{detail.title}}</h1>
+        <button ng-click="last()">Last</button>
+        <button ng-click="next()">Next</button>
+      </div>
+
+
     </div>
 
   </body>
