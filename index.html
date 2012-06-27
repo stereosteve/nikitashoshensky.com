@@ -11,15 +11,18 @@
   </head>
   <body>
 
-    <div class="thumbs">
+    <div class="horizon" />
+      <div class="name">NIKITA SHOSHENSKY</div>
+      <div class="left_end"></div>
+      <div class="thumbs"></div>
     </div>
 
     <script id="thumb_template" type="text/x-underscore-template">
       <div class="thumb">
-        <a class="colorbox imageLink" rel="<%= id %>" href="/detail/<%= detail %>"><img src="/thumbs/<%= thumb %>" /></a>
+        <a class="colorbox imageLink" rel="<%= id %>" title="<%= info %>" href="/detail/<%= detail %>"><img src="/thumbs/<%= thumb %>" /></a>
         <div class="title"><%= title %></div>
         <% more.forEach(function(m) { %>
-          <a class="colorbox hide" rel="<%= id %>" href="/detail/<%= m %>"></a>
+          <a class="colorbox hide" rel="<%= id %>" title="<%= info %>" href="/detail/<%= m %>"></a>
         <% }) %>
       </div>
     </script>

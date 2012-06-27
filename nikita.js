@@ -3,6 +3,7 @@
 var WORKS = [
   {
     title: 'The Professionals I',
+    medium: 'Ink on paper 8.5 x 11',
     thumb: 'professionals-thumb.jpg',
     detail: 'The-Professionals.jpg',
     more: [
@@ -40,6 +41,7 @@ $(function() {
 
   WORKS.forEach(function(work, index) {
     work.id = "work-" + index
+    work.info = "<strong>" + work.title + '</strong> : ' + (work.medium || '')
     var $thumb = $(thumbTemplate(work))
     $thumb.data('work', work)
     $thumbs.append($thumb)
