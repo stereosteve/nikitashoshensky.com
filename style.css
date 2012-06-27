@@ -6,6 +6,18 @@ body {
   line-height: 18px;
 }
 
+a:focus {
+  outline: none;
+}
+.colorbox:hover {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+
 .thumbs {
   border-top: 1px solid #999;
   height: 450px;
