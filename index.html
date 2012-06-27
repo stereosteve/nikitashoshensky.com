@@ -1,1 +1,19 @@
-<h1>Nikita</h1>
+<!doctype html>
+<html>
+  <head>
+    <title>Nikita</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="http://code.angularjs.org/1.0.1/angular-1.0.1.js"></script>
+    <script src="/nikita.js"></script>
+  </head>
+  <body ng-app>
+
+    <div class="thumbs" ng-controller="ThumbsCtrl">
+      <div class="thumb" ng-repeat="work in works">
+        <img ng-src="/thumbs/{{work.thumb}}" />
+        <div class="title">{{work.title}}</div>
+      </div>
+    </div>
+
+  </body>
+</html>

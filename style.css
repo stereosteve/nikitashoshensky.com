@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.thumbs {
+  border-top: 1px solid #999;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  margin-top: -250px;
+}
+
+.thumb {
+  float: left;
+}
+
+.thumb img {
+  border-bottom: 1px solid #999;
+}
+
+.thumb:hover {
+  opacity: 0.5;
+}
