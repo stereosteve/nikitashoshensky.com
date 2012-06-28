@@ -20,6 +20,7 @@ a:focus {
   position: absolute;
   top: 50%;
   margin-top: -270px;
+  width: 10000px;
 }
 
 .name {
