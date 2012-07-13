@@ -20,7 +20,7 @@ a:focus {
   position: absolute;
   top: 50%;
   margin-top: -270px;
-  width: 10000px;
+  width: 5000px;
 }
 
 .name {
@@ -49,10 +49,42 @@ a:focus {
   float: left;
 }
 
+.thumb .details {
+  max-width: 150px;
+  font-size: 10px;
+  line-height: 14px;
+}
+.thumb .title {
+  color: #666;
+  font-weight: bold;
+  font-style: italic;
+}
+.thumb .subtitle {
+  color: #999;
+}
+.thumb .medium {
+  color: #999;
+  font-size: 9px;
+  font-style: italic;
+}
+
 .thumb img {
   border-bottom: 1px solid #999;
+}
+.thumb:last-child img {
+  border-right: 1px solid #999;
 }
 
 .thumb:hover {
   opacity: 0.5;
+}
+
+
+.bio {
+  border: 1px solid #999;
+  height: 203px;
+  width: 420px;
+  padding: 10px;
+  margin-left: 20px;
+  float: left;
 }

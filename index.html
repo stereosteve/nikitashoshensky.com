@@ -15,14 +15,22 @@
       <div class="name">NIKITA SHOSHENSKY</div>
       <div class="left_end"></div>
       <div class="thumbs"></div>
+
+      <div class="bio">
+        <p>Nikita Bio</p>
+      </div>
     </div>
 
     <script id="thumb_template" type="text/x-underscore-template">
       <div class="thumb">
-        <a class="colorbox imageLink" rel="<%= id %>" title="<%= info %>" href="/detail/<%= detail %>"><img src="/thumbs/<%= thumb %>" /></a>
-        <div class="title"><%= title %></div>
-        <% more.forEach(function(m) { %>
-          <a class="colorbox hide" rel="<%= id %>" title="<%= info %>" href="/detail/<%= m %>"></a>
+        <a class="colorbox imageLink" rel="<%= work.id %>" title="<%= work.info %>" href="/detail/<%= work.detail %>"><img src="/thumbs/<%= work.thumb %>" /></a>
+        <div class="details">
+          <div class="title"><%= work.title %></div>
+          <% if (work.subtitle) { %><div class="subtitle"><%= work.subtitle %></div><% } %>
+          <div class="medium"><%= work.medium %></div>
+        </div>
+        <% work.more.forEach(function(m) { %>
+          <a class="colorbox hide" rel="<%= work.id %>" title="<%= work.info %>" href="/detail/<%= m %>"></a>
         <% }) %>
       </div>
     </script>
