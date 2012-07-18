@@ -20,7 +20,7 @@ a:focus {
   position: absolute;
   top: 50%;
   margin-top: -270px;
-  width: 5000px;
+  width: 6000px;
 }
 
 .name {
@@ -82,8 +82,7 @@ a:focus {
 
 .bio {
   border: 1px solid #999;
-  height: 203px;
-  width: 420px;
+  width: 620px;
   padding: 10px;
   margin-left: 20px;
   float: left;
